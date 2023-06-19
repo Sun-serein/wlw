@@ -89,8 +89,7 @@ class Window(QWidget, Ui_Form):
         seri = QLineSeries()
         seri.setName("烟雾浓度")
         chart.addSeries(seri)
-        
-        test  = self.select_mysql_data()
+        data  = select_mysql_data()
         t=len(data)
         for i in range(len(data)):
             y = []
